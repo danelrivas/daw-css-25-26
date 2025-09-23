@@ -1,0 +1,15 @@
+.container {
+    background-color: rgb(99, 147, 170);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2em;
+    height: 90vh;
+    padding: 2vh;
+}
+
+.container div {
+    background-color: rgb(219, 213, 131);
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+

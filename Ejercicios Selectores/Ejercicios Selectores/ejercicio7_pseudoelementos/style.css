@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+h1 {
+    color: #4682B4;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+}
+
+.parrafo::first-letter{
+    color: red;
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.parrafo::first-line{
+    color: red;
+}
+
+p::first-line{
+    color: red;
+    font-weight: bold;
+}

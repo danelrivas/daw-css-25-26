@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+li {
+    background-color: lightgrey;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+}

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal{
+    width: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr 8fr 3fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas:
+    "." "." "." "." "." "." ".";
+}
+
+.cabecera{
+    background-color: aqua;
+    width: 100%;
+}
+
+.izquierda{
+    background-color: beige;
+    width: 100%;
+}
+
+.contenido{background-color: lightgrey;}
+
+.anexo1{background-color: orange;}
+
+.anexo2{background-color: cadetblue;}
+
+.derecha{
+    background-color: bisque;
+    width: 100%;
+}
+
+.pie{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+@media (min-width: 600px) and (max-width: 1000px){
+    .principal {
+        grid-template-rows: 2fr 6fr 3fr 1fr;
+        grid-template-columns: 1fr 2.5fr 2.5fr;
+        grid-template-areas: 
+        "head head head"
+        "izq con con"
+        "der an1 an2"
+        "pie pie pie";
+    }
+
+    .cabecera{grid-area: head;}
+
+    .izquierda{grid-area: izq;}
+
+    .contenido{grid-area: con;}
+
+    .anexo1{grid-area: an1;}
+
+    .anexo2{grid-area: an2;}
+
+    .derecha{grid-area: der;}
+
+    .pie{grid-area: pie;}
+}
+
+@media (min-width: 1000px){
+    .principal {
+        grid-template-rows: 2fr 6fr 3fr 1fr;
+        grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+        grid-template-areas: 
+        "head head head head"
+        "izq con con der"
+        "izq an1 an2 der"
+        "pie pie pie pie";
+    }
+
+    .cabecera{grid-area: head;}
+
+    .izquierda{grid-area: izq;}
+
+    .contenido{grid-area: con;}
+
+    .anexo1{grid-area: an1;}
+
+    .anexo2{grid-area: an2;}
+
+    .derecha{grid-area: der;}
+
+    .pie{ grid-area: pie;}
+}
