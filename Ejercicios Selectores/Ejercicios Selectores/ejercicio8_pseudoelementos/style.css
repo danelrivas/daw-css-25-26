@@ -29,8 +29,9 @@ h1 {
     content: url("img/images/ie.png");
 }
 
-.ie::after {
-    content: url("img/images/ie.png");
+.ie::after{
+    content: " .Ie";
+    color: rgb(255, 81, 0);
 }
 
 .chrome::before {
@@ -38,7 +39,8 @@ h1 {
 }
 
 .chrome::after {
-    content: url("img/images/chrome.png");
+    content: " .Ch";
+    color: rgb(255, 81, 0);
 }
 
 .firefox::before {
@@ -46,6 +48,7 @@ h1 {
 }
 
 .firefox::after {
-    content: url("img/images/firefox.png");
+    content: " .Ff";
+    color: rgb(255, 81, 0);
 }
 
